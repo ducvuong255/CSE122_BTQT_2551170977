@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.khung {
+    width: 444px;
+    height: 280px;
+    margin: 10px auto;
+    background-color: #f1f1f1;
+}
+
+.dong-ho {
+    height: 143px;
+    background-color: black;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.dong-ho img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.loi-chao {
+    margin: 40px 28px 0;
+    padding: 10px;
+    background-color: white;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.loi-chao p {
+    margin: 0;
+    color: #cc2828;
+    font-family: Georgia, serif;
+    font-size: 40px;
+}
