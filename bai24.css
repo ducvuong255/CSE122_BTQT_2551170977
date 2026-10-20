@@ -1,0 +1,180 @@
+
+/* 1. Thiết lập chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* 3. Khung bảng giá */
+.pricing-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    background: #f0f3ff;
+}
+
+/* 4. Tiêu đề */
+.pricing-header {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.pricing-header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.pricing-header p {
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* 5. Lưới 3 gói giá */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    align-items: center;
+}
+
+/* 6. Thẻ giá */
+.pricing-card {
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 14px;
+    padding: 20px 12px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(30, 41, 59, 0.08);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+/* 7. Nhãn trên mỗi thẻ */
+.badge {
+    display: inline-block;
+    background-color: #eef2ff;
+    color: #4338ca;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* 8. Tên gói */
+.pricing-card h2 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+/* 9. Giá tiền */
+.price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+.price small {
+    font-size: 10px;
+    font-weight: normal;
+    color: #64748b;
+}
+
+/* 10. Danh sách quyền lợi */
+.features {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.features li {
+    font-size: 12px;
+    color: #475569;
+    line-height: 1.8;
+}
+
+/* 11. Nút đăng ký */
+.btn {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #f1f5f9;
+    color: #334155;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+/* 12. Gói Pro nổi bật */
+.pricing-card.featured {
+    border-color: #6c63ff;
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.18);
+}
+
+.featured .badge {
+    background-color: #eef2ff;
+    color: #4338ca;
+}
+
+/* Nút của gói Pro */
+.featured .btn {
+    background-color: #4f46e5;
+    color: #ffffff;
+}
+
+/* 13. Hiệu ứng khi rê chuột */
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(30, 41, 59, 0.15);
+}
+
+.pricing-card.featured:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 30px rgba(79, 70, 229, 0.25);
+}
+
+.btn:hover {
+    background-color: #4f46e5;
+    color: #ffffff;
+}
+
+/* 14. Chân trang */
+footer {
+    text-align: center;
+    margin: 16px auto;
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* 15. Giao diện điện thoại */
+@media (max-width: 650px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card.featured {
+        transform: none;
+    }
+
+    .pricing-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .pricing-card.featured:hover {
+        transform: translateY(-4px);
+    }
+}
