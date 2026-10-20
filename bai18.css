@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fcfcfc;
+}
+
+/* Bài viết container */
+.article-container {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Tiêu đề bài viết: chữ màu cam #E65100, cỡ lớn */
+.main-title {
+    color: #E65100;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.sub-title {
+    color: #E65100;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Ảnh hoa nổi bên phải (float: right) */
+.featured-img {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+/* Đoạn văn bản có Drop Cap */
+.paragraph-content {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Chữ cái đầu đoạn văn (Drop cap) màu cam #E65100 */
+.paragraph-content::first-letter {
+    color: #E65100;
+    font-size: 48px;
+    float: left;
+    line-height: 1;
+    padding-right: 8px;
+    font-weight: bold;
+}
+
+/* Clear float để khối phụ không bị tràn lên ảnh */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Khối phụ "Hương vị miền Nam": viền #2E7D32, nền #f4fbf4, bo góc */
+.flavor-box {
+    border: 2px solid #2E7D32;
+    background-color: #f4fbf4;
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-top: 25px;
+}
+
+/* Tiêu đề khối: in nghiêng, màu #2E7D32 */
+.flavor-title {
+    color: #2E7D32;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Danh sách 2 cột bằng CSS columns */
+.menu-list {
+    column-count: 2;
+    column-gap: 30px;
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* Định dạng các mục danh sách */
+.menu-list li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #222222;
+}
+
+/* Sử dụng icon bullet tùy chỉnh nếu có icon_list_c.gif */
+.menu-list.custom-icon {
+    list-style-image: url('Anh/Bai18/icon_list_c.gif');
+}
