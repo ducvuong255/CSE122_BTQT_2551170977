@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 20 - Hiệu ứng ảnh với CSS Filter</title>
+    <link rel="stylesheet" href="bai20.css">
+</head>
+<body>
+
+    <!-- 13 nút radio ẩn: mỗi nút ứng với 1 hiệu ứng (phải đặt TRƯỚC khung ảnh và thanh nút) -->
+    <input type="radio" name="hieuung" id="gray" checked>
+    <input type="radio" name="hieuung" id="xray">
+    <input type="radio" name="hieuung" id="invert">
+    <input type="radio" name="hieuung" id="fliph">
+    <input type="radio" name="hieuung" id="flipv">
+    <input type="radio" name="hieuung" id="glow">
+    <input type="radio" name="hieuung" id="shadow">
+    <input type="radio" name="hieuung" id="boldshadow">
+    <input type="radio" name="hieuung" id="dropshadow">
+    <input type="radio" name="hieuung" id="blur">
+    <input type="radio" name="hieuung" id="wave">
+    <input type="radio" name="hieuung" id="mask">
+    <input type="radio" name="hieuung" id="alpha">
+
+    <!-- Khung ảnh: ảnh + dòng chữ -->
+    <div class="khung-anh">
+        <img src="anhbai20.gif" alt="Hoa hồng">
+        <div class="dong-chu">Special For You</div>
+    </div>
+
+    <!-- Thanh nút: mỗi label gắn với 1 radio bằng for="..." -->
+    <div class="thanh-nut">
+        <label for="gray">Gray</label>
+        <label for="xray">Xray</label>
+        <label for="invert">Invert</label>
+        <label for="fliph">FlipH</label>
+        <label for="flipv">FlipV</label>
+        <label for="glow">Glow</label>
+        <label for="shadow">Shadow</label>
+        <label for="boldshadow">Bold Shadow</label>
+        <label for="dropshadow">DropShadow</label>
+        <label for="blur">Blur</label>
+        <label for="wave">Wave</label>
+        <label for="mask">Mask</label>
+        <label for="alpha">Alpha</label>
+    </div>
+
+    <!-- SVG filter cho hiệu ứng Wave (không hiển thị ra màn hình) -->
+    <svg width="0" height="0">
+        <filter id="songNuoc">
+            <feTurbulence type="turbulence" baseFrequency="0.02 0.05" numOctaves="2" result="nhieu"/>
+            <feDisplacementMap in="SourceGraphic" in2="nhieu" scale="15"/>
+        </filter>
+    </svg>
+
+</body>
+</html>
