@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Container chính bao bọc toàn bộ nội dung */
+.content-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Clearfix để xử lý phần tử float */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Ảnh đồi cát ở bên trái (~300px, float: left) */
+.left-img {
+    float: left;
+    width: 300px;
+    border-radius: 6px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Tiêu đề bài viết: màu vàng #C9A227, có bóng đỏ (text-shadow) */
+.main-title {
+    color: #C9A227;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 3px red; /* Bóng đỏ cho tiêu đề */
+}
+
+/* Khối nội dung: viền nét đứt màu cam #E07B00, bo góc */
+.text-box {
+    border: 2px dashed #E07B00;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #fffdf9;
+}
+
+/* Các đoạn văn trong khối nội dung */
+.text-box p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.text-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Từ nhấn mạnh: màu đỏ #C62828, in đậm */
+.highlight {
+    color: #C62828;
+    font-weight: bold;
+}
