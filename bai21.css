@@ -1,0 +1,116 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    background-color: white;
+}
+
+.trang {
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Banner phía trên */
+.banner {
+    display: flex;
+    align-items: center;
+    height: 41px;
+    padding: 10px;
+    background-color: #C62828;
+    color: white;
+}
+
+.banner img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* Chia bố cục 3 vùng */
+.noidung {
+    display: grid;
+    grid-template-columns: 110px 1fr 90px;
+    min-height: 285px;
+}
+
+/* Menu bên trái */
+.menu {
+    background: linear-gradient(#C62828, #8E0000);
+}
+
+.menu a {
+    display: block;
+    padding: 12px 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #a82020;
+}
+
+/* Nội dung chính */
+.chinh {
+    padding: 12px;
+    background-color: white;
+}
+
+.chinh h3 {
+    margin: 0 0 8px;
+    color: #C62828;
+    font-size: 14px;
+}
+
+/* Hộp menu màu vàng */
+.hop-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px;
+    background-color: #FFE082;
+    border-radius: 4px;
+}
+
+/* Hộp nội dung */
+.hop-noidung {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.loichao {
+    text-align: center;
+}
+
+/* Quảng cáo bên phải */
+.quangcao {
+    padding: 10px;
+}
+
+.quangcao img {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 8px;
+}
+
+/* Hiển thị trên điện thoại */
+@media (max-width: 600px) {
+    .trang {
+        width: 100%;
+    }
+
+    .noidung {
+        grid-template-columns: 1fr;
+    }
+
+    .quangcao {
+        display: flex;
+        gap: 10px;
+    }
+
+    .quangcao img {
+        width: 45%;
+    }
+}
