@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 25 - Trang du lịch Việt Nam</title>
+    <link rel="stylesheet" href="bai25.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="#" class="brand">CSE.TLU Travel</a>
+
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">☰</label>
+
+            <div class="nav-links">
+                <a href="#">Trang chủ</a>
+                <a href="#diem-den">Điểm đến</a>
+                <a href="#footer">Tour</a>
+                <a href="#footer">Liên hệ</a>
+            </div>
+        </nav>
+
+        <!-- Khối giới thiệu -->
+        <header class="hero">
+            <h1>Khám phá Việt Nam</h1>
+            <p>Hành trình qua những kỳ quan thiên nhiên đẹp nhất đất nước.</p>
+            <a href="#diem-den" class="btn">Đặt tour ngay</a>
+        </header>
+
+        <!-- Danh sách địa điểm -->
+        <main id="diem-den" class="travel-grid">
+
+            <article class="travel-card">
+                <img
+                    src="AnhBai03vinh-ha-long.png"
+                    alt="Vịnh Hạ Long"
+                >
+                <div class="card-content">
+                    <h2>Vịnh Hạ Long</h2>
+                    <p>Hơn 2.000 đảo đá vôi, Di sản thiên nhiên thế giới.</p>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="travel-card">
+                <img
+                    src="anhthacbandoc.png"
+                    alt="Thác Bản Giốc"
+                >
+                <div class="card-content">
+                    <h2>Thác Bản Giốc</h2>
+                    <p>Thác nước đẹp nhất Việt Nam, nằm ở Cao Bằng.</p>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+            <article class="travel-card">
+                <img
+                    src="anhfansipan.png"
+                    alt="Fansipan"
+                >
+                <div class="card-content">
+                    <h2>Fansipan</h2>
+                    <p>“Nóc nhà Đông Dương”, cao 3.147 m, thuộc Lào Cai.</p>
+                    <a href="#" class="card-btn">Xem thêm</a>
+                </div>
+            </article>
+
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer">
+            <p>CSE.TLU - ChimCanhCut - 0866000513</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
