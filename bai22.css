@@ -1,0 +1,116 @@
+
+/* Khai báo màu chế độ sáng */
+:root {
+    --nen: #ffffff;
+    --chu: #172033;
+    --the: #f1f5f9;
+    --vien: #e0e0e0;
+    --nhan: #2563eb;
+}
+
+/* Màu chế độ tối */
+.toi {
+    --nen: #0f172a;
+    --chu: #e2e8f0;
+    --the: #1e293b;
+    --vien: #334155;
+    --nhan: #60a5fa;
+}
+
+/* Cài đặt chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--nen);
+    color: var(--chu);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Khung chính */
+.khung {
+    width: 90%;
+    max-width: 590px;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: var(--nen);
+    transition: background-color 0.3s;
+}
+
+/* Tiêu đề */
+.tieude {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tieude h2 {
+    font-size: 16px;
+}
+
+/* Nút gạt */
+#nutGat {
+    width: 42px;
+    height: 22px;
+    padding: 3px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--nhan);
+    cursor: pointer;
+}
+
+/* Hình tròn bên trong nút */
+#nutGat span {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-left: 0;
+    border-radius: 50%;
+    background-color: white;
+    transition: margin-left 0.3s;
+}
+
+/* Khi bật chế độ tối, nút tròn di chuyển sang phải */
+#nutGat.bat span {
+    margin-left: 20px;
+}
+
+/* Các thẻ thông tin */
+.the {
+    padding: 12px;
+    margin-bottom: 8px;
+    background-color: var(--the);
+    border: 1px solid var(--vien);
+    border-radius: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Tiêu đề trong thẻ */
+.the h3 {
+    margin: 0 0 8px;
+    font-size: 12px;
+    color: var(--nhan);
+}
+
+/* Nội dung trong thẻ */
+.the p {
+    margin: 0;
+    font-size: 11px;
+}
+
+/* Dòng ghi chú */
+.ghichu {
+    font-size: 10px;
+    color: var(--chu);
+}
+
+/* Màn hình điện thoại */
+@media (max-width: 600px) {
+    .khung {
+        width: 100%;
+    }
+}
