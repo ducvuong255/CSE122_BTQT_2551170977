@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách việc cần làm</title>
+    <link rel="stylesheet" href="bai16.css">
+</head>
+<body>
+
+    <div class="todo-app">
+        <div class="header">
+            <h2>Danh sách việc cần làm</h2>
+            <p>Thêm việc mới, đánh dấu hoàn thành hoặc xoá — tất cả bằng JavaScript.</p>
+        </div>
+
+        <div class="form-input">
+            <input type="text" id="task-input" placeholder="Nhập công việc mới...">
+            <button onclick="addTask()">Thêm</button>
+        </div>
+
+        <ul id="task-list">
+            <li>
+                <span class="task-text completed" onclick="toggleTask(this)">Đọc chương HTML5 cơ bản</span>
+                <button class="btn-delete" onclick="deleteTask(this)">Xoá</button>
+            </li>
+            <li>
+                <span class="task-text" onclick="toggleTask(this)">Làm bài tập CSS Grid</span>
+                <button class="btn-delete" onclick="deleteTask(this)">Xoá</button>
+            </li>
+            <li>
+                <span class="task-text" onclick="toggleTask(this)">Quay video OBS nộp bài</span>
+                <button class="btn-delete" onclick="deleteTask(this)">Xoá</button>
+            </li>
+        </ul>
+
+        <div class="footer-count" id="task-count">
+            Còn 2 việc chưa hoàn thành
+        </div>
+    </div>
+
+    <script src="bai16.js"></script>
+</body>
+</html>
