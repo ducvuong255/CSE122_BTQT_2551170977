@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #fffaf0;
+}
+
+/* Tiêu đề chính */
+.main-title {
+    color: #E65100;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Bố cục chia 2 cột (Ảnh bên trái, Bảng bên phải) */
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Cột trái */
+.left-column {
+    flex: 0 0 250px;
+}
+
+.illustration-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Cột phải */
+.right-column {
+    flex: 0 0 500px;
+}
+
+/* Định dạng bảng */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #E0D6C2;
+}
+
+/* Hàng tiêu đề bảng */
+th {
+    background-color: #E65100;
+    color: #FFFFFF;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Cột STT hẹp và căn giữa */
+.col-stt {
+    width: 70px;
+    text-align: center;
+}
+
+th.col-stt {
+    text-align: center;
+}
+
+/* Cột Tên món ăn rộng hơn */
+.col-name {
+    text-align: left;
+}
+
+/* Dòng dữ liệu xen kẽ màu */
+tbody tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #FDF8EF;
+}
