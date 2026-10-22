@@ -1,0 +1,89 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: linear-gradient(#7ec8e3, #0a5c8a);
+}
+
+.nen {
+    width: 85%;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+.khung {
+    background-color: #f5f9fa;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #0b3d5c;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.nhanmanh {
+    background-color: #0b3d5c;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.noidung {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.vanban {
+    flex: 1;
+    color: #222222;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.vanban p {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.vanban p:first-child::first-letter {
+    float: left;
+    font-size: 32px;
+    font-weight: bold;
+    color: #0b3d5c;
+    line-height: 1;
+    padding-right: 4px;
+}
+
+.noidung img {
+    width: 35%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .nen {
+        width: 100%;
+    }
+
+    .noidung {
+        flex-direction: column;
+    }
+
+    .noidung img {
+        width: 100%;
+        height: auto;
+    }
+}
