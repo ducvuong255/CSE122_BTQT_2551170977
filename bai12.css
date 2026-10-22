@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Anh/Bai12/Nen.gif');
+    background-repeat: repeat;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+}
+
+.calendar-box {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    padding: 30px 20px;
+    margin-bottom: 25px;
+}
+
+.year-text {
+    color: #C62828;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.month-text {
+    color: #1565C0;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.day-text {
+    color: #C62828;
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.weekday-text {
+    color: #1565C0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.greeting-text {
+    color: #C62828;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.form-box {
+    border: 1px solid #1565C0;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: #fafafa;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.input-group label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#print-btn {
+    background-color: #455A64;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+#print-btn:hover {
+    background-color: #37474F;
+}
