@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy tính cá nhân</title>
+    <link rel="stylesheet" href="bai15.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <!-- Màn hình hiển thị -->
+        <div class="screen">
+            <div id="expression" class="calc-expression"></div>
+            <div id="result" class="calc-result">0</div>
+        </div>
+
+        <!-- Bàn phím lưới 4 cột -->
+        <div class="keypad">
+            <button class="btn btn-special" onclick="clearScreen()">C</button>
+            <button class="btn btn-operator" onclick="appendValue('(')">(</button>
+            <button class="btn btn-operator" onclick="appendValue(')')">)</button>
+            <button class="btn btn-operator" onclick="appendValue('/')">&divide;</button>
+
+            <button class="btn btn-number" onclick="appendValue('7')">7</button>
+            <button class="btn btn-number" onclick="appendValue('8')">8</button>
+            <button class="btn btn-number" onclick="appendValue('9')">9</button>
+            <button class="btn btn-operator" onclick="appendValue('*')">&times;</button>
+
+            <button class="btn btn-number" onclick="appendValue('4')">4</button>
+            <button class="btn btn-number" onclick="appendValue('5')">5</button>
+            <button class="btn btn-number" onclick="appendValue('6')">6</button>
+            <button class="btn btn-operator" onclick="appendValue('-')">-</button>
+
+            <button class="btn btn-number" onclick="appendValue('1')">1</button>
+            <button class="btn btn-number" onclick="appendValue('2')">2</button>
+            <button class="btn btn-number" onclick="appendValue('3')">3</button>
+            <button class="btn btn-operator" onclick="appendValue('+')">+</button>
+
+            <button class="btn btn-number btn-zero" onclick="appendValue('0')">0</button>
+            <button class="btn btn-number" onclick="appendValue('.')">.</button>
+            <button class="btn btn-equal" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="bai15.js"></script>
+</body>
+</html>
